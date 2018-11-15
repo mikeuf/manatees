@@ -104,7 +104,7 @@ h1 {
 	font-size: 5rem;
 }
 
-p, ul li {
+p, ul li, figcaption {
 	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
 }
@@ -148,7 +148,7 @@ a {
 }
 
 #logo {
-	height: 100px;
+	height: 10rem;
 	max-width: 100%;
 	animation-name: manatee-rock;
 	animation-direction: alternate-reverse;
@@ -180,4 +180,14 @@ a {
 #animation-manatee-head-on:checked {
 	transition: transform 3s;
 transform: rotate(180deg) scale(10);
+}
+
+.gallery {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery figure {
+	padding: 1rem;
 }
