@@ -4,7 +4,53 @@
 	border: 0;
 }
 
+body {
+	height: 100%;
+	font-size: 18px;
+}
+
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Wendy One', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+p, ul li {
+font-family: 'Open Sans', sans-serif;
+}
+
+header, main, footer {
+	width: 80%;
+	max-width: 960px;
+	margin: auto;
+	padding-top: 2rem;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+ul li {
+	list-style-type: none;
+	margin-left: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
