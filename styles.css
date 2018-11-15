@@ -104,16 +104,26 @@ h1 {
 	font-size: 5rem;
 }
 
-p, ul li, figcaption {
+ul li, figcaption {
 	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
 }
 
 header, main, footer {
-	width: 80%;
+	width: 90%;
 	max-width: 960px;
 	margin: auto;
 	padding-top: 2rem;
+}
+
+article {
+	background-color: #ffffe6;
+	opacity: 0.5;
+	border-radius: 1rem;
+	height: 100%;
+	font-size: 1.25rem;
+	color: #000000;
+	padding: 3%;
 }
 
 header {
@@ -190,4 +200,9 @@ transform: rotate(180deg) scale(10);
 
 .gallery figure {
 	padding: 1rem;
+}
+
+#manatee-rescue {
+	width: 400px;
+	max-width: 50%;
 }
