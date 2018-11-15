@@ -4,17 +4,84 @@
 	border: 0;
 }
 
-body {
-	height: 100%;
-	font-size: 18px;
-background: #8360c3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@-webkit-keyframes fade {
+	0% {
+		background-color: rgba(0, 0, 255, 0);
+		opacity: 0
+	}
+	50% {
+		background-color: rgba(0, 0, 255, 0.5);
+		opacity: 1
+	}
+	100% {
+		background-color: rgba(0, 0, 255, 1);
+		opacity: 1
+	}
+}
 
+@-moz-keyframes fade {
+	0% {
+		background-color: rgba(0, 0, 255, 0);
+		opacity: 0
+	}
+	50% {
+		background-color: rgba(0, 0, 255, 0.5);
+		opacity: 1
+	}
+	100% {
+		background-color: rgba(0, 0, 255, 1);
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	0% {
+		background-color: rgba(0, 0, 255, 0);
+		opacity: 0
+	}
+	50% {
+		background-color: rgba(0, 0, 255, 0.5);
+		opacity: 1
+	}
+	100% {
+		background-color: rgba(0, 0, 255, 1);
+		opacity: 1
+	}
+}
+
+@-o-keyframes fade {
+	0% {
+		background-color: rgba(0, 0, 255, 0);
+		opacity: 0
+	}
+	50% {
+		background-color: rgba(0, 0, 255, 0.5);
+		opacity: 1
+	}
+	100% {
+		background-color: rgba(0, 0, 255, 1);
+		opacity: 1
+	}
+}
+
+body {
+	height: 100vh;
+	font-size: 18px;
+	background: #003366;
+}
+
+#water-layer1 {
+	height: 100vh;
+	background: -webkit-linear-gradient(135deg, #2ebf91, #8360c3);
+	background: linear-gradient(135deg, #2ebf91, #8360c3);
+	-webkit-animation: fade 5s;
+	animation: fade 5s;
+	-moz-animation: fade 5s;
+	-o-animation: fade 5s;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+	display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,7 +94,7 @@ h1 {
 }
 
 p, ul li {
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
 }
 
@@ -63,4 +130,31 @@ a {
 #logo {
 	height: 100px;
 	max-width: 100%;
+}
+
+@keyframes manatee-fade-in {
+	0% {
+    opacity:0;
+    transform:  rotate(-200deg) scale(0.1);
+  }
+  100% {
+    opacity:1;
+		transform:  rotate(0deg) scale(1);
+  }
+}
+	
+
+#animation-manatee-head-on {
+	width: 30%;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	float: left;
+	animation-name: manatee-fade-in;
+	animation-duration: 5s;
+}
+
+#animation-manatee-head-on:checked {
+	transition: transform 3s;
+transform: rotate(180deg) scale(10);
 }
