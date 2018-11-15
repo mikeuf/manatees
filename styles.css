@@ -84,7 +84,10 @@ body {
 display: block;
 width: 80%;
 margin: auto;
+margin-top: 5%;
 text-align: center;
+font-size: 6rem;
+
 } 
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
@@ -98,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 5rem;
 }
 
 p, ul li {
@@ -166,7 +169,6 @@ a {
 
 #animation-manatee-head-on {
 	display: block;
-	width: 300px;
 	max-width: 80%;
 	margin: auto;
 	margin-top: 20%;
