@@ -7,6 +7,10 @@
 body {
 	height: 100%;
 	font-size: 18px;
+background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
@@ -14,7 +18,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Wendy One', sans-serif;
+	font-family: 'Bowlby One SC', sans-serif;
+	color: #ffffff;
 }
 
 h1 {
@@ -23,6 +28,7 @@ h1 {
 
 p, ul li {
 font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
 }
 
 header, main, footer {
@@ -54,3 +60,7 @@ a {
 	color: inherit;
 }
 
+#logo {
+	height: 100px;
+	max-width: 100%;
+}
