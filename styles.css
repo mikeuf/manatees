@@ -4,52 +4,7 @@
 	border: 0;
 }
 
-@-webkit-keyframes fade {
-	0% {
-		background-color: rgba(0, 0, 255, 0);
-		opacity: 0
-	}
-	50% {
-		background-color: rgba(0, 0, 255, 0.5);
-		opacity: 1
-	}
-	100% {
-		background-color: rgba(0, 0, 255, 1);
-		opacity: 1
-	}
-}
-
-@-moz-keyframes fade {
-	0% {
-		background-color: rgba(0, 0, 255, 0);
-		opacity: 0
-	}
-	50% {
-		background-color: rgba(0, 0, 255, 0.5);
-		opacity: 1
-	}
-	100% {
-		background-color: rgba(0, 0, 255, 1);
-		opacity: 1
-	}
-}
-
 @keyframes fade {
-	0% {
-		background-color: rgba(0, 0, 255, 0);
-		opacity: 0
-	}
-	50% {
-		background-color: rgba(0, 0, 255, 0.5);
-		opacity: 1
-	}
-	100% {
-		background-color: rgba(0, 0, 255, 1);
-		opacity: 1
-	}
-}
-
-@-o-keyframes fade {
 	0% {
 		background-color: rgba(0, 0, 255, 0);
 		opacity: 0
@@ -165,6 +120,16 @@ a {
   }
 }
 
+@keyframes manatee-spin {
+
+	0% {
+    transform:  rotate(-360deg);
+  }
+  100% {
+		transform:  rotate(0deg);
+  }
+}
+
 #logo {
 	height: 10rem;
 	max-width: 100%;
@@ -172,6 +137,7 @@ a {
 	animation-direction: alternate-reverse;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	align-self: center;
 }
 
 @keyframes manatee-fade-in {
@@ -199,6 +165,17 @@ a {
 	transition: transform 3s;
 transform: rotate(180deg) scale(10);
 }
+
+nav img {
+	width: 10rem !important;
+}
+
+nav img:hover {
+	animation-name: manatee-spin;
+	animation-duration: 1s;
+}
+
+
 
 .gallery {
 	display: flex;
