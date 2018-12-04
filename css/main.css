@@ -284,13 +284,7 @@
 	display: block;
 	margin: auto;
   }
-  
-  /*
-  .gallery figure {
-  padding: 0 1rem 1rem 1rem;
-  }
-   */
-  
+    
 	.gallery figure img {
 	  width: 450px; 
 	  max-width: 100%; 
@@ -300,8 +294,6 @@
 	#manatee-rescue, #manatee-about {
 	  width: 500px;
 	  max-width: 100%;
-	  /*	display: block;
-	  float: right; */
   }
   
   .art-blurb {
@@ -326,7 +318,7 @@
 	  width: 150px;
 	}
   }
-  
+
   /* TABLETS */
   @media (min-width: 700px) {
 	#nav-mobile {
