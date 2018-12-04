@@ -81,7 +81,7 @@ h1 {
 
 p {
 	font-size: 1.25rem;
-	line-height: 1.25;
+	line-height: 1.4;
 	padding-bottom: 1rem;
 }
 
@@ -90,7 +90,12 @@ ul li {
 	font-weight: bold;
 	font-size: 1.25rem;
 	color: #ffffff;
+	list-style-type: none;
+	line-height: 1.75;
+	align-self: flex-end;
+	padding-left: 1rem;
 }
+
 
 
 #nav-desktop {
@@ -147,17 +152,12 @@ ul {
 	justify-content: flex-end;
 }
 
-ul li {
-	list-style-type: none;
-	margin-left: 2rem;
-	line-height: 1.75;
-}
+
 
 
 #nav-mobile ul {
 	display: flex;
 	flex-direction: column;
-	justify-content: ;
 }
 
 #nav-mobile ul li {
@@ -228,7 +228,7 @@ transform: rotate(180deg) scale(10);
 }
 
 nav img {
-	width: 70%;
+	width: 130px;
 	max-width: 100%;
 }
 
@@ -295,7 +295,7 @@ padding-right: 0 !important;
 
 
 #logo {
-	width: 400px;
+	width: 200px;
 	max-width: 100%;
 }
 
