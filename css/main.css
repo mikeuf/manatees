@@ -35,6 +35,10 @@
 	}
 }
 
+html {
+	min-height: 100vh;
+}
+
 body {
 	min-height: 100vh;
 	font-size: 18px;
@@ -87,6 +91,7 @@ ul li {
 
 article figure {
 	float: right;
+	max-width: 100% !important; 
 	padding: 0 0 1rem 0;
 }
 
@@ -207,8 +212,8 @@ nav img:hover {
 }
 
 .gallery figure img {
-/* width: 450px; 
-max-width: 100%; */
+width: 450px; 
+max-width: 100%; 
 border-radius: 1rem;
 }
 
@@ -222,6 +227,7 @@ border-radius: 1rem;
 .art-blurb {
 	/*width: 450px; */
 	max-width: 100%;
+	margin: auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
@@ -254,6 +260,10 @@ article figure {
 	  .gallery figure {
 		  width: 100% !important;
 	  }
+
+	  .gallery figure img {
+		border-radius: 1rem;
+		}
 }
 
 
