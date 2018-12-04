@@ -35,9 +35,9 @@
 
 			<nav id="nav-desktop">
 			<ul>
-				<li><a href="about.html"><img alt="About" title="About" src="assets/images/btn-about2.png" /></a></li>
-				<li><a href="conservation.html"><img alt="Conservation" title="Conservation" src="assets/images/btn-conservation.png" /></a></li>
-				<li><a href="manatees-in-art.html"><img alt="Manatees in Art" title="Manatees in Art" src="assets/images/btn-manatees-in-art.png" /></a></li>
+				<li><a href="about.html"><img id="image-about" alt="About" title="About" src="assets/images/btn-about2.png" /></a></li>
+				<li><a href="conservation.html"><img id="image-conservation" alt="Conservation" title="Conservation" src="assets/images/btn-conservation.png" /></a></li>
+				<li><a href="manatees-in-art.html"><img id="image-manatees-in-art" alt="Manatees in Art" title="Manatees in Art" src="assets/images/btn-manatees-in-art.png" /></a></li>
 			</ul>
 			</nav>
 		</header>
@@ -59,6 +59,37 @@
 			<p>&copy; 2018, Mike Black</p>
         </footer>
 		</div>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+		<script>
+		$(function () {
+			'use strict';
+	 $('#image-about').delay( 300 ).fadeTo( 700,1 ); 
+	 $('#image-conservation').delay( 1000 ).fadeTo( 700,1 ); 
+	 $('#image-manatees-in-art').delay( 1700 ).fadeTo( 700,1 ); 
+
+   });
+		</script>
+
+		<script>
+
+document.getElementById('logo').addEventListener('click', function () {
+
+if (window.confirm("Are you ready to play Deep Space Manatee?")) {
+	window.open('https://www.mikepblack.com/manatee/'); 
+
+	} 
+		event.preventDefault();
+	
+
+});
+
+		
+		</script>
+
 	</body>
 
 </html>

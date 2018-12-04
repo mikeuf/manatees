@@ -93,6 +93,7 @@ margin-top: 5%;
 text-align: center;
 font-size: 2rem;
 
+
 } 
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
@@ -230,6 +231,10 @@ a {
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	align-self: center;
+}
+
+#image-about, #image-conservation, #image-manatees-in-art {
+	opacity: 0;
 }
 
 @keyframes manatee-fade-in {
