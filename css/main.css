@@ -91,7 +91,13 @@ ul li {
 }
 
 
+#nav-desktop {
+display: none;
+}
 
+#nav-mobile {
+display: block;
+}
 
 
 figcaption {
@@ -144,6 +150,20 @@ ul li {
 	margin-left: 2rem;
 }
 
+
+#nav-mobile ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: ;
+}
+
+#nav-mobile ul li {
+	list-style-type: none;
+	margin-left: 2rem;
+}
+
+
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -169,7 +189,7 @@ a {
 }
 
 #logo {
-	width: 400px;
+	width: 150px;
 	max-width: 100%;
 	animation-name: manatee-rock;
 	animation-direction: alternate-reverse;
@@ -256,6 +276,19 @@ padding-right: 0 !important;
 /***** MEDIA QUERIES *****/
 /* DESKTOP */
 @media (min-width: 700px) {
+	#nav-mobile {
+		display: none;
+	}
+#nav-desktop {
+	display: block;
+}
+
+
+#logo {
+	width: 400px;
+	max-width: 100%;
+}
+
 h1 {
 	font-size: 3rem;
 }
@@ -268,9 +301,6 @@ article figure {
 	float: right;
 	padding: 0 0 1rem 1rem;
 }
-}
-
-@media (min-width: 700px) {
 
 	.gallery {
 		display: flex;
