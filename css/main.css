@@ -20,7 +20,6 @@
 }
 
 
-
 @keyframes fade {
 	0% {
 		background-color: rgba(0, 0, 255, 0);
@@ -37,13 +36,13 @@
 }
 
 body {
-	height: 100vh;
+	min-height: 100vh;
 	font-size: 18px;
 	background: #003366;
 }
 
 #water-layer {
-	height: 100vh;
+	min-height: 100vh;
 	background: -webkit-linear-gradient(135deg, #2ebf91, #8360c3);
 	background: linear-gradient(135deg, #2ebf91, #8360c3);
 	-webkit-animation: fade 3s;
@@ -68,16 +67,17 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bowlby One SC', sans-serif;
-	letter-spacing: 5px;
+	letter-spacing: 0.1rem;
 	color: #ffffff;
 }
 
 h1 {
-	font-size: 3rem !important;
+	font-size: 2rem;
 }
 
 p {
-	padding: 0 1rem 1rem 1rem;
+	font-size: 1.25rem;
+	line-height: 1.25;
 }
 
 ul li {
@@ -85,8 +85,14 @@ ul li {
 	color: #ffffff;
 }
 
+article figure {
+	float: right;
+	padding: 0 0 1rem 0;
+}
+
 figcaption {
 	color: #000000;
+	text-align: center;
 }
 
 header, main, footer {
@@ -148,8 +154,7 @@ a {
 }
 
 #logo {
-	height: 10rem;
-	max-width: 100%;
+	max-width: 80%;
 	animation-name: manatee-rock;
 	animation-direction: alternate-reverse;
 	animation-duration: 5s;
@@ -184,15 +189,13 @@ transform: rotate(180deg) scale(10);
 }
 
 nav img {
-	width: 10rem !important;
+	max-width: 100%;
 }
 
 nav img:hover {
 	animation-name: manatee-spin;
 	animation-duration: 1s;
 }
-
-
 
 .gallery {
 	display: flex;
@@ -209,11 +212,10 @@ border-radius: 1rem;
 }
 
 #manatee-rescue, #manatee-about {
-	width: 400px;
-	max-width: 50%;
-	padding: 0 1rem 0 1rem;
-	display: block;
-	float: right;
+	width: 500px;
+	max-width: 100%;
+/*	display: block;
+	float: right; */
 }
 
 .art-blurb {
@@ -224,15 +226,22 @@ border-radius: 1rem;
 }
 
 /***** MEDIA QUERIES *****/
-@media (max-width: 700px) {
-	h1 {
-		font-size: 2rem;
-
+/* DESKTOP */
+@media (min-width: 700px) {
+h1 {
+	font-size: 3rem;
 }
 
-nav img {
-	max-width: 100%;
+p {
+	font-size: 1.5rem;
 }
+
+article figure {
+	float: right;
+	padding: 0 0 1rem 1rem;
+}
+
+
 
 
 
