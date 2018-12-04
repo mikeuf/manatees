@@ -87,6 +87,8 @@ p {
 
 ul li {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
 	color: #ffffff;
 }
 
@@ -148,6 +150,7 @@ ul {
 ul li {
 	list-style-type: none;
 	margin-left: 2rem;
+	line-height: 1.75;
 }
 
 
@@ -189,7 +192,7 @@ a {
 }
 
 #logo {
-	width: 150px;
+	width: 100px;
 	max-width: 100%;
 	animation-name: manatee-rock;
 	animation-direction: alternate-reverse;
@@ -275,6 +278,13 @@ padding-right: 0 !important;
 
 /***** MEDIA QUERIES *****/
 /* DESKTOP */
+
+@media (min-width: 375px) {
+	#logo {
+		width: 150px;
+	}
+}
+
 @media (min-width: 700px) {
 	#nav-mobile {
 		display: none;
