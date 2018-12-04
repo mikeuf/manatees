@@ -205,10 +205,11 @@ nav img:hover {
 
 .gallery {
 	display: block;
+	margin: auto;
 }
 
 .gallery figure {
-	padding: 1rem;
+	padding: 0 1rem 1rem 1rem;
 }
 
 .gallery figure img {
@@ -225,11 +226,20 @@ border-radius: 1rem;
 }
 
 .art-blurb {
-	/*width: 450px; */
-	max-width: 100%;
-	margin: auto;
+	width: 400px; 
+	max-width: 90%;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.art-blurb img {
+padding-left: 0 !important;
+padding-right: 0 !important;
+margin-left: 0;
+margin-right: 0;
+
 }
 
 /***** MEDIA QUERIES *****/
@@ -258,7 +268,7 @@ article figure {
 	  }
 
 	  .gallery figure {
-		  width: 100% !important;
+		  width: 100%;
 	  }
 
 	  .gallery figure img {
@@ -266,5 +276,18 @@ article figure {
 		}
 }
 
+/***** MEDIA QUERIES *****/
 
+@media (max-width: 1050px) {
+
+	.art-blurb {
+		width: 100%;
+	}
+
+	figcaption {
+		text-align: left;
+	}
+
+
+}
 
