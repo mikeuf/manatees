@@ -107,6 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+	position: relative;
+	opacity: 0;
 	font-size: 2rem;
 }
 
@@ -224,6 +226,7 @@ a {
 }
 
 #logo {
+
 	width: 90px;
 	max-width: 100%;
 	animation-name: manatee-rock;
