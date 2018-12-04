@@ -8,16 +8,46 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bowlby One SC';
   src: url('../assets/fonts/Bowlby/BowlbyOneSC-Regular.ttf');
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+	font-family: 'Lora';
+	src: url('../assets/fonts/lora/Lora-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Lora';
+	src: url('../assets/fonts/lora/Lora-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+  }
+
+  @font-face {
+	font-family: 'Lora';
+	src: url('../assets/fonts/lora/Lora-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+  }
+
+  @font-face {
+	font-family: 'Lora';
+	src: url('../assets/fonts/lora/Lora-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+
 
 
 @keyframes fade {
@@ -61,7 +91,7 @@ width: 80%;
 margin: auto;
 margin-top: 5%;
 text-align: center;
-font-size: 6rem;
+font-size: 2rem;
 
 } 
 
@@ -80,8 +110,9 @@ h1 {
 }
 
 p {
+	font-family: 'Lora', serif;
 	font-size: 1.25rem;
-	line-height: 1.4;
+	line-height: 1.5;
 	padding-bottom: 1rem;
 }
 
@@ -192,7 +223,7 @@ a {
 }
 
 #logo {
-	width: 100px;
+	width: 90px;
 	max-width: 100%;
 	animation-name: manatee-rock;
 	animation-direction: alternate-reverse;
@@ -294,6 +325,11 @@ padding-right: 0 !important;
 }
 
 
+#welcome-text {
+	font-size: 3rem;
+	} 
+
+
 #logo {
 	width: 200px;
 	max-width: 100%;
@@ -304,7 +340,7 @@ h1 {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 article figure {
