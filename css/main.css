@@ -266,6 +266,64 @@
 	padding-right: 0 !important;
   
   }
+
+
+
+/* *** Begin Bubbles *** */
+.bubbles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bubble {
+  border-radius: 50%;
+  border: 0.5rem solid #006CE2;
+  will-change: transform;
+  transition: 1s;
+}
+.bubbleHover {
+  transform: scale(2);
+  background: #ffE448;
+  border: 0.5rem solid #ffE448;
+}
+.minDistance {
+  background: darkorange;
+}
+.maxDistance {
+  background: #5AC7E0;
+  background: rgba(0, 108, 226, 1);
+}
+.bubble-container {
+  position: absolute;
+  bottom: -20rem;
+  animation: bubbleRise 0.1s infinite ease-out;
+  will-change: transform;
+}
+@keyframes bubbleRise {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+  }
+  15% {
+    bottom: 0;
+    opacity: 0.1;
+    margin-left: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    margin-left: 50px;
+  }
+  100% {
+    bottom: 30%;
+    opacity: 0;
+  }
+}
+/* *** End Bubbles *** */
+
+
   
   /***** MEDIA QUERIES *****/
   
