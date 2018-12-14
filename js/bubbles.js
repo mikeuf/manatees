@@ -12,9 +12,9 @@ const minBubbles = 5;
 const maxBubbles = minBubbles * 2;
 const minSize = 5;
 const maxSize = 100;
-const minDelay = 2;
-const maxDelay = 5;
-const minPosition = 0;
+const minDelay = 1;
+const maxDelay = 2;
+const minPosition = 25;
 const maxPosition = 75;
 
 function getRandomNumber(min, max) {
